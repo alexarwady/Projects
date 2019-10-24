@@ -1,0 +1,245 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+    font-family: "LeagueSpartan";
+    src: url("fonts/leaguespartan-bold.ttf");
+}
+
+body {
+  font-size: 120%;
+  font-family: 'LeagueSpartan', sans-serif;
+    background-image: url("2.png");
+    /*background-color: #F8F8FF;
+    background-repeat: no-repeat;
+    background-size: 1280px 700px;*/
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: top center;
+}
+
+tr:nth-child(odd) {background-color: rgba(214, 214, 214, 0.8);}
+tr:nth-child(even) {background-color: rgba(242, 242, 242, 0.8);}
+
+.header {
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #3B056F;
+  text-align: center;
+  border: 1px solid #3B056F;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+
+form, .content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #3B056F;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+  margin: 5px 0px 5px 0px;
+}
+
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #3B056F;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0px 0px 0px;
+    width: 99%;
+}
+.error {
+  width: 92%; 
+  margin: 0px auto;
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+
+.topnav {
+  background: linear-gradient(#3B056F 100%, #F8F8FF 0%);
+}
+
+.topnav img {
+  padding: 10px 10px 5px 100px;
+}
+
+.input-group-2 label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+.input-group-2 textarea {
+    height: 50px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+a.btn {
+    appearance: button;
+
+    text-decoration: none;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #3B056F;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0px 0px 0px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+.container {
+    width: 90%;
+}
+
+header {
+    background: #3B056F;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 70px;
+    position: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #ffffff;
+
+    position: center;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.notification {
+    background-color: #3B056F;
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    position: relative;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.notification .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
